@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: go-app
+  name: go-app
+spec:
+  serviceAccountName: pipeline-account
+  containers:
+  - image: teruakinoyama/tekton-docker:1.0
+    name: go-app
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

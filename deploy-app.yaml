@@ -7,7 +7,7 @@ metadata:
 spec:
   serviceAccountName: pipeline-account
   containers:
-  - image: teruakinoyama/tekton-docker:1.0
+  - image: teruakinoyama/tekton-docker:7sr68
     name: go-app
     resources: {}
   dnsPolicy: ClusterFirst
